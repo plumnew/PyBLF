@@ -33,7 +33,7 @@ class CanMessage(BlfObjectWrapper):
 
 can_msg = CanMessage()
 reader = BlfReader()
-if reader.open("C:\\Users\\Public\\Documents\\Vector\\CANoe\\Sample Configurations 17.0.201\\IO_HIL\\FDX\\Logging\\Easy.blf") is False:
+if reader.open("C:\\Logging\\Easy.blf") is False:
     print("Open Error!")
 reader.enroll(can_msg)
 
