@@ -13,9 +13,9 @@ PyBLF also offer a high level API, which using "enroll" method, so only user nee
 
 In the following demo, user need to decliar the BLFObject and even could set addtional filter.
 
-'''
-
+'''python
 from pyBLFLib import *
+
 
 class CanMessage(BlfObjectWrapper):
     obj: Optional[VBLCANMessage] = None
@@ -32,12 +32,8 @@ reader = BlfReader()
 if reader.open("C:\\Users\\Public\\Documents\\Vector\\CANoe\\Sample Configurations 17.0.201\\IO_HIL\\FDX\\Logging\\Easy.blf") is False:
     print("Open Error!")
 reader.enroll(can_msg)
-
-
 while (obj := reader.read_data()) is not None:
     if obj is can_msg:
         print(can_msg.obj.header.object_time_stamp, can_msg.obj.identifier, can_msg.obj.channel, can_msg.obj.data)
-
 reader.close()
-
-
+'''
