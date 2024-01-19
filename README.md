@@ -19,7 +19,7 @@ graph TD;
 
 In the following demo, user need to decliar the BLFObject and even could set addtional filter.
 
-'''
+'''python
 from pyBLFLib import *
 
 
@@ -35,8 +35,8 @@ class CanMessage(BlfObjectWrapper):
 
 can_msg = CanMessage()
 reader = BlfReader()
-if reader.open("C:\\Users\\Public\\Documents\\Vector\\CANoe\\Sample Configurations 17.0.201\\IO_HIL\\FDX\\Logging\\Easy.blf") is False:
-    print("Open Error!")
+if reader.open(\"R:\\Logging\\Easy.blf\") is False:
+    print(\"Open Error!\")
 reader.enroll(can_msg)
 while (obj := reader.read_data()) is not None:
     if obj is can_msg:
