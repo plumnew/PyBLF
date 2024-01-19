@@ -23,7 +23,7 @@ from pyBLFLib import *
 
 class CanMessage(BlfObjectWrapper):
     obj: Optional\[VBLCANMessage\] = None
-    
+
     def __init__(self):
         super().__init__(BL_OBJ_TYPE.BL_OBJ_TYPE_CAN_MESSAGE, sizeof(VBLCANMessage), VBLCANMessage())
 
