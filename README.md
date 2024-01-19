@@ -19,7 +19,7 @@ graph TD;
 
 '''python
 from pyBLFLib import *
-
+'''
 
 class CanMessage(BlfObjectWrapper):
     obj: Optional[VBLCANMessage] = None
@@ -29,7 +29,7 @@ class CanMessage(BlfObjectWrapper):
 
     def filter(self):
         return self.obj.channel == 1
-'''
+
 
 can_msg = CanMessage()
 reader = BlfReader()
