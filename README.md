@@ -29,7 +29,7 @@ class CanMessage(BlfObjectWrapper):
 
     def filter(self):
         return self.obj.channel == 1
-
+'''
 
 can_msg = CanMessage()
 reader = BlfReader()
@@ -43,5 +43,5 @@ while (obj := reader.read_data()) is not None:
         print(can_msg.obj.header.object_time_stamp, can_msg.obj.identifier, can_msg.obj.channel, can_msg.obj.data)
 
 reader.close()
-'''
+
 In the following demo, user need to decliar the BLFObject and even could set addtional filter.
