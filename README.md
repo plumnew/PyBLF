@@ -20,7 +20,7 @@ graph TD;
 In the following demo, user need to decliar the BLFObject and even could set addtional filter.
 
 '''python
-from pyBLFLib import \*
+from pyBLFLib import *
 
 
 class CanMessage(BlfObjectWrapper):
