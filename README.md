@@ -30,7 +30,7 @@ class CanMessage(BlfObjectWrapper):
     def filter(self):
         return self.obj.channel == 1
 
-'''python
+'''
 can_msg = CanMessage()
 reader = BlfReader()
 if reader.open("C:\\Logging\\Easy.blf") is False:
