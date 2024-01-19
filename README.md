@@ -19,12 +19,12 @@ graph TD;
 
 In the following demo, user need to decliar the BLFObject and even could set addtional filter.
 
-\'''python
+'''python
 from pyBLFLib import \*
 
 
 class CanMessage(BlfObjectWrapper):
-    obj: Optional[VBLCANMessage] = None
+    obj: Optional\[VBLCANMessage\] = None
     
     def __init__(self):
         super().__init__(BL_OBJ_TYPE.BL_OBJ_TYPE_CAN_MESSAGE, sizeof(VBLCANMessage), VBLCANMessage())
@@ -42,4 +42,4 @@ while (obj := reader.read_data()) is not None:
     if obj is can_msg:
         print(can_msg.obj.header.object_time_stamp, can_msg.obj.identifier, can_msg.obj.channel, can_msg.obj.data)
 reader.close()
-\'''
+'''
