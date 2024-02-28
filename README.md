@@ -5,6 +5,10 @@ PyBLF is a python wrapper for read and write BLF file
 In PyBLFLib, you could set the dll path, that the only thing you need to do about the wrapper configuration 
 dll = "D:\\local3rd\\BLFLibs\\Win64\\binlog.dll"
 
+```
+you can get "binlog.dll", after you install CANoe or CANalyzer
+```
+
 ## Struture
 low level wrapper is only API convert from C API, there is not different.
 PyBLF also offer a high level API, which using "enroll" method, so only user need data will be readback, that will save lots of efforts and make code look simple.
