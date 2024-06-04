@@ -11,7 +11,7 @@ you can get "binlog.dll", after you install CANoe or CANalyzer
 
 ## Struture
 low level wrapper is only API convert from C API, there is not different.
-PyBLF also offer a high level API, which using "enroll" method, so only user need data will be readback, that will save lots of efforts and make code look simple.
+PyBLF also offer a high level API, which using "filter" method, so only user need data will be readback, that save lots of efforts and make code look simple.
 
 ```mermaid
 graph TD;
