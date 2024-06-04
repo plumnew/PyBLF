@@ -2,7 +2,7 @@
 PyBLF is a python wrapper for read and write BLF file
 
 ## configuration PyBLF
-In PyBLFLib, you could set the dll path, that the only thing you need to do about the wrapper configuration 
+In PyBLFLib, you need set the dll path, that's the only thing you need to do about the wrapper configuration 
 dll = "D:\\local3rd\\BLFLibs\\Win64\\binlog.dll"
 
 ```
